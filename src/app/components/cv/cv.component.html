@@ -1,0 +1,110 @@
+
+
+<div class="container">
+   <div class="row">
+     <div class="col">
+       
+     </div>
+     <div class="col">
+       
+      <div class="container">
+         <div class="row">
+           <div class="col-4">
+          
+           </div>
+           <div class="col">
+              <br>
+            <img class="perfilimg" src={{listadedatosgenerales[2].data}} >
+            <h4>{{listadedatosgenerales[0].data}}</h4>
+      
+            <h4>{{listadedatosgenerales[1].data}}</h4>
+           </div>
+           <div class="col-6">
+            
+           </div>
+         </div>
+       </div>
+      
+<br>
+      <!-- datos de contacto -->
+      <ul class="list-group">
+         <a  class="list-group-item list-group-item-action active">
+            Datos de contacto
+          </a>
+      <li *ngFor="let item of listadeemail"   class="list-group-item">
+         {{item.data}}
+         
+      </li>
+      
+     
+      <li *ngFor="let itemtel of listadetelefono" class="list-group-item">
+         {{itemtel.data}}
+      </li>
+    
+       </ul>
+     
+
+
+
+
+      <!-- datos de escuela -->
+      <ul class="list-group">
+         <a  class="list-group-item list-group-item-action active">
+            Datos de escuela
+          </a>
+      <li *ngFor="let itemescuela of listadeescuelas" class="list-group-item">
+         {{itemescuela.data}}
+      </li>
+    </ul>
+      <!-- datos de skills -->
+      <ul class="list-group">
+         <a  class="list-group-item list-group-item-action active">
+            Datos de habilidades
+          </a>
+      <li *ngFor="let itemskills of listaskills" class="list-group-item">
+         {{itemskills.data}}
+      </li>
+      
+      </ul>
+    
+      <!-- datos work -->
+      <ul class="list-group">
+         <a  class="list-group-item list-group-item-action active">
+            Datos de trabajo
+          </a>
+      <li *ngFor="let itemswork of listawork" class="list-group-item">
+         {{itemswork.data}}
+      </li>
+    
+      </ul>
+     
+
+      <div class="container">
+         <div class="row">
+           <div class="col-4">
+          
+           </div>
+           <div class="col">
+           
+   
+      <a style="margin-bottom: 10px;"  class="btn btn-primary"href="#">Inicio</a>
+           </div>
+           <div class="col-6">
+            
+           </div>
+         </div>
+       </div>
+      
+
+
+
+
+
+
+
+     </div>
+     <div class="col">
+       
+     </div>
+   </div>
+ </div>

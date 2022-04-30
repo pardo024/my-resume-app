@@ -1,0 +1,11 @@
+.perfilimg{
+height: 100px;
+width: 100px;
+border-radius: 50%;
+}
+.list-group{
+margin-top: 20px;
+
+min-height: 200px;
+    
+}

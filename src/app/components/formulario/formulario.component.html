@@ -1,0 +1,265 @@
+
+
+  <div class="container-fluid ">
+   <br>
+    <div class="row">
+    
+      <div class="col ">
+       
+<button (click)="autollenado()" class="btn btn-success" style="margin-left: 50px;">Autollenado</button>
+
+
+        
+      </div>
+      <div class="col">
+       
+    </div>
+      <div class="col-5">
+<br>
+       
+      
+<!-- PICTURE FORM -->
+<div class="card">
+  <br>
+  <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+      <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+    </svg> Foto</legend>
+  <div class="card-body">
+           <div class="campo">
+            <label class="form-label">Ingresa el url de tu fotografia</label>
+            <input type="text" class="form-control" id="iname" #asfoto >
+            <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+          </div>
+     
+       
+  </div>
+</div>
+
+<br>
+<!-- GENERAL FORM -->
+        <div class="card">
+            <br>
+            <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              </svg> Datos generales</legend>
+            <div class="card-body">
+                     <div class="campo">
+                      <label class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="iname" #asnombre >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                   <div class="campo">
+                      <label class="form-label">Apellidos</label>
+                      <input type="text" class="form-control" #asapellido id="iapellidos" >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                 
+            </div>
+          </div>
+     
+          <br>
+
+          <!-- Formulario de contacto-->
+          <div class="card">
+            <br>
+            <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+            </svg>Datos de contacto</legend>
+<div style="display: flex; justify-content: right;">  
+
+  <button class="botoncircular" id="morecontact" (click)="addemail()" >+</button>
+  <button class="botoncircular" id="morecontact" (click)="lessemail()" >-</button>
+</div>
+
+<table #astablaemail >
+
+<td>   <div class="card-body">
+  <div class="campo">
+   <label class="form-label">Email</label>
+   <input type="email" class="form-control" #asemail id="iemail" pattern="[a-z]{1,15}" title="Username should only contain lowercase letters. e.g. john"SS >
+
+   <!-- pattern="/^[a-zA-Z0-9.!#$%&'*+\/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}
+   [a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/" required -->
+   <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+ </div>
+ <div class="campo">
+  <label class="form-label">Telefono</label>
+  <input type="text" class="form-control" #asnumero id="itelefono" >
+  <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+</div>
+</div>   </td>
+
+
+</table>
+
+           
+          </div>
+     
+          <br>
+   
+<!-- ACADEMY FORMING FORM -->
+
+        <div class="card">
+            <br>
+            <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+              </svg> Formación académica</legend>
+              <div style="display: flex; justify-content: right;">  
+
+                <button class="botoncircular" id="morecontact" (click)="addescuela()" >+</button>
+                <button class="botoncircular" id="morecontact" (click)="lessescuela()" >-</button>
+              </div>
+              <table #astablaescuela >
+            <div class="card-body">
+                     <div class="campo">
+                      <label class="form-label" >Grado</label>
+                      <input type="text" class="form-control" #asgrado >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                   <div class="campo">
+                      <label class="form-label" >Institucion</label>
+                      <input type="text" class="form-control"  #asinstitucion  >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="campo">
+                      <label class="form-label" >Fecha de inicio</label>
+                      <input type="date" class="form-control" #asfechainicio >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                    <div class="campo">
+                      <label class="form-label" >Fecha de finalizacion</label>
+                      <input type="date" class="form-control" #asfechafin >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+            </div>
+          </table>
+          </div>
+    
+               
+          <br>
+   
+<!-- WORK EXPERIENCE FORM -->
+
+        <div class="card">
+            <br>
+            <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-building" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M14.763.075A.5.5 0 0 1 15 .5v15a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5V14h-1v1.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V10a.5.5 0 0 1 .342-.474L6 7.64V4.5a.5.5 0 0 1 .276-.447l8-4a.5.5 0 0 1 .487.022zM6 8.694 1 10.36V15h5V8.694zM7 15h2v-1.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5V15h2V1.309l-7 3.5V15z"/>
+                <path d="M2 11h1v1H2v-1zm2 0h1v1H4v-1zm-2 2h1v1H2v-1zm2 0h1v1H4v-1zm4-4h1v1H8V9zm2 0h1v1h-1V9zm-2 2h1v1H8v-1zm2 0h1v1h-1v-1zm2-2h1v1h-1V9zm0 2h1v1h-1v-1zM8 7h1v1H8V7zm2 0h1v1h-1V7zm2 0h1v1h-1V7zM8 5h1v1H8V5zm2 0h1v1h-1V5zm2 0h1v1h-1V5zm0-2h1v1h-1V3z"/>
+              </svg>Experiencia laboral</legend>
+              <div style="display: flex; justify-content: right;">  
+                <button class="botoncircular" id="morecontact" (click)="addtrabajo()" >+</button>
+                <button class="botoncircular" id="morecontact" (click)="lesstrabajo()" >-</button>
+              </div>
+              <table #astablawork >
+            <div class="card-body">
+                     <div class="campo">
+                      <label class="form-label" > Puesto</label>
+                      <input type="text" class="form-control" #aspuesto >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                   <div class="campo">
+                      <label class="form-label">Empresa</label>
+                      <input type="text" class="form-control" #asempresa >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+               
+                    <div class="campo">
+                      <label class="form-label">Resposabilidades</label>
+            <br>
+  
+                      <div class="row">
+                        <div class="col-10" style="margin: 0;">
+
+                          <input type="text" class="form-control" #asresponsabilidades>
+                        </div>
+                        <div class="col-2"style="margin: 0;" ><button class="botoncuadrado" id="morecontact" (click)="addresponsabilidad()" >+</button></div>
+                        <div class="col-2"style="margin: 0;" ><button class="botoncuadrado" id="morecontact" (click)="lessresponsabilidad()" >-</button></div>
+                        <table #asvistarespon>  </table>
+                
+                      </div>
+                   
+                    </div>
+                
+        
+                    <div class="campo">
+                      <label class="form-label">Fecha inicio</label>
+                      <input type="date" class="form-control" #asfechainiciotrabajo >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>  <div class="campo">
+                      <label class="form-label">Fecha de finalizacion</label>
+                      <input type="date" class="form-control" #asfechafintrabajo >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                 
+            </div>
+          </table>
+          </div>
+
+          <br>
+   
+<!-- SKILLS FORM -->
+
+        <div class="card">
+            <br>
+            <legend style="text-align: center;" > <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294l4-13zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+              </svg> Habilidades</legend>
+
+              <div style="display: flex; justify-content: right;">  
+
+                <button class="botoncircular" id="morecontact" (click)="addskill()" >+</button>
+                <button class="botoncircular" id="morecontact" (click)="lessskill()" >-</button>
+              </div>
+
+              <table #astableskilss >
+
+            <div class="card-body">
+                     <div class="campo">
+                      <label class="form-label">Habilidad</label>
+                      <input type="text" class="form-control" #ashabilidad>
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                    </div>
+                   <div class="campo">
+                      <label class="form-label">Nivel de dominio</label>
+                      <input type="range" class="form-range"  min="0" max="100" step="1" (change)="barradominio()" #asdominio 
+                
+                      >
+                      
+                      <input type="number" min="1" max="100" style="width: 50px;" #asvaluerange >
+                      <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+                   
+                  </div>
+            </div>
+          </table>
+          </div>
+
+      </div>
+      <div class="col">
+       
+      </div>
+      <div class="col">
+       
+    </div>
+    </div>
+  </div>
+
+
+  <br>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+     
+      </div>
+      <div class="col-2">
+        <button (click)="navegarfin()"  class="btn btn-primary"> Finalizar</button>
+      </div>
+      <div class="col-5">
+       
+      </div>
+    </div>
+  </div>
+  <br>
+ 

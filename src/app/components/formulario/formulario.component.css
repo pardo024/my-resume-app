@@ -1,0 +1,32 @@
+.circular {
+    border-radius: 50%;
+    width:200px;
+    height:200px;
+    
+  }
+ 
+  .campo{
+      margin-top: 10px;
+  }
+.botoncircular{
+    width: 30px; 
+    margin-right:5px; 
+     border-radius: 100%;
+     text-align: center;
+     border-color: rgba(7, 152, 248, 0.856);
+     background-color: rgba(7, 152, 248, 0.856);
+     color: rgb(255, 255, 255);
+     box-shadow: none;
+}
+.botoncuadrado{
+  width: 30px; 
+  height: 30px;
+  margin-top: 5px;
+ 
+   text-align: center;
+   border-color: rgba(7, 152, 248, 0.856);
+   background-color: rgba(7, 152, 248, 0.856);
+   color: rgb(255, 255, 255);
+ box-shadow: none;
+   border-radius: 5px;
+}
